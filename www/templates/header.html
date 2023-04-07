@@ -1,0 +1,36 @@
+{{define "Header"}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/static.css" />
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="top-navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">AV</a>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="/mainPage" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/examples" class="nav-link">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  {{ end }}
