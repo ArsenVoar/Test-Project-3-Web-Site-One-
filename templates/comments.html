@@ -1,0 +1,20 @@
+{{ define "comments"}}
+
+{{ template "Header"}}
+
+ {{ range . }}
+<div class="alert alert-danger">
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Anons }}</p>
+    <a href="/post/{{ .Id }}" class="btn btn-danger">Read more</a>
+</div>
+{{ else }}
+<p class="lead">No Articles!</p>
+
+
+
+{{ end }}
+
+{{ template "Footer"}}
+
+{{ end }}
